@@ -1,13 +1,24 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Hero from './Hero';  
+import Turn from './Turn';
+import Continue from './Continue';
 
-class AuthorQuizContainer extends Component {
-  render() {
+const AuthorQuizContainer = ({turnData}) =>  {
     return (
-      <div>
-          Content AuthorQuiz
+      <div className="author__wrap">
+        <div className="author__main">
+          <div className="row">
+            <div className="col-sm-6">
+              <Hero author={turnData.author} />
+            </div>
+            <div className="col-sm-6">
+              <Turn />
+            </div>
+          </div>
+        </div>
+        <Continue />
       </div>
     );
-  }
 }
 
 export default AuthorQuizContainer;
