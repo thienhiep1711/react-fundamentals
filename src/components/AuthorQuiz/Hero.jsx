@@ -1,9 +1,14 @@
 import React from 'react';
 
-const Hero = ({author}) => {
+const Hero = ({author, highlight}) => {
     return (
       <div className="author__hero">
-        <img src={author.imageUrl} alt={author.imageSource} className="author__hero__image" />
+        <div className="author__hero__image"  style={{borderColor: highlight}}>
+        <img src={author.imageUrl} alt={author.imageSource}  />
+        </div>
+        <div className="author__hero__name">
+          <strong>{author.name}</strong>
+        </div>
       </div>
     );
 }

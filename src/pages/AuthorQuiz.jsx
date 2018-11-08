@@ -43,10 +43,6 @@ const authors = [
   }
 ];
 
-
-
-
-
 class AuthorQuiz extends Component {
   constructor(props) {
     super(props);
@@ -73,17 +69,16 @@ class AuthorQuiz extends Component {
   highlightToBgColor(highlight) {
     const mapping = {
       'none': '',
-      'correct': 'green',
-      'wrong': 'red',
+      'correct': '#23d6ff',
+      'wrong': '#e6454d',
     }
     return mapping[highlight]
   }
 
   onAnswerSelected(answer) {
     const isCorrect = this.state.turnData.author.books.some((book) => book === answer);
-    console.log(isCorrect)
     this.setState({
-      highlight: isCorrect ? 'correct' : 'wrong'
+      highlight: isCorrect ? 'correct' : 'wrong',
     })
   }
 
@@ -98,7 +93,7 @@ class AuthorQuiz extends Component {
             </div>
             <div className="mainWrap__content">
                 <div className="container">
-                  <AuthorQuizContainer {...this.state} selected={this.onAnswerSelected} />
+                  <AuthorQuizContainer {...this.state} selected={this.onAnswerSelected} highlight={this.highlightToBgColor(this.state.highlight)}  />
                 </div>
             </div>
          </div>
