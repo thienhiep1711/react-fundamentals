@@ -3,7 +3,7 @@ import Hero from './Hero';
 import Turn from './Turn';
 import Continue from './Continue';
 
-const AuthorQuizContainer = ({turnData}) =>  {
+const AuthorQuizContainer = ({turnData, selected}) =>  {
     return (
       <div className="author__wrap">
         <div className="author__main">
@@ -12,11 +12,11 @@ const AuthorQuizContainer = ({turnData}) =>  {
               <Hero author={turnData.author} />
             </div>
             <div className="col-sm-6">
-              <Turn books={turnData.books}/>
+              <Turn books={turnData.books} selected={selected}/>
             </div>
           </div>
         </div>
-        <Continue />
+        <Continue  />
       </div>
     );
 }

@@ -51,9 +51,11 @@ class AuthorQuiz extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      // eslint-disable-next-line no-undef
       turnData: this.getTurnData(authors),
+      highlight: '',
      };
+
+     this.onAnswerSelected = this.onAnswerSelected.bind(this);
   }
 
   getTurnData(authors) {
@@ -68,6 +70,23 @@ class AuthorQuiz extends Component {
     }
   }
 
+  highlightToBgColor(highlight) {
+    const mapping = {
+      'none': '',
+      'correct': 'green',
+      'wrong': 'red',
+    }
+    return mapping[highlight]
+  }
+
+  onAnswerSelected(answer) {
+    const isCorrect = this.state.turnData.author.books.some((book) => book === answer);
+    console.log(isCorrect)
+    this.setState({
+      highlight: isCorrect ? 'correct' : 'wrong'
+    })
+  }
+
   render() {
     return (
       <div className="container-fluid">
@@ -79,7 +98,7 @@ class AuthorQuiz extends Component {
             </div>
             <div className="mainWrap__content">
                 <div className="container">
-                  <AuthorQuizContainer {...this.state} />
+                  <AuthorQuizContainer {...this.state} selected={this.onAnswerSelected} />
                 </div>
             </div>
          </div>
