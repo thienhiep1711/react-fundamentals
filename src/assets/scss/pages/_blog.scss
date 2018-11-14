@@ -1,0 +1,25 @@
+.blog {
+  &__item {
+    margin-bottom: 30px;
+    background-color: #fff;
+    display: flex;
+    &__img {
+      flex-basis: 320px;
+    }
+    &__detail {
+      flex: 1;
+      padding: 20px;
+    }
+    &__title {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    &__description {
+      color: #777;
+      font-size: 15px;
+    }
+  }
+  &__option {
+    text-align: center;
+  }
+}

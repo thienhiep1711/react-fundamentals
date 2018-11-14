@@ -15,6 +15,9 @@ class FooterMenu extends Component {
           <NavLink  to="/author-quiz"  >AuthorQuiz</NavLink>
         </li>
         <li>
+          <NavLink  to="/blog"  >Blogs</NavLink>
+        </li>
+        <li>
           <NavLink  to="/product" >Product</NavLink>
         </li>
         <li>

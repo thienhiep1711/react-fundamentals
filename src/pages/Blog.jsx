@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import PageTitle from '../components/Layout/PageTitle';
-import ProductContainer from '../components/Product/ProductContainer';
-
-class Product extends Component {
+import BlogContainer from '../components/Blog/BlogContainer';
+class Blog extends Component {
   render() {
     return (
       <div className="container-fluid">
         <div className="mainWrap">
-          <PageTitle titlePage="Product Page"/>
+          <PageTitle titlePage="Blogs"/>
           <div className="mainWrap__content">
               <div className="container">
-                  <ProductContainer />
+                <BlogContainer />
               </div>
           </div>
         </div>
@@ -19,4 +18,4 @@ class Product extends Component {
   }
 }
 
-export default Product;
+export default Blog;

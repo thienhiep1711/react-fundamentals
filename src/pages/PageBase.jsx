@@ -9,6 +9,7 @@ import Home from './Home';
 import About from './About';
 import Product from './Product';
 import Contact from './Contact';
+import Blog from './Blog';
 class PageBase extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ class PageBase extends Component {
             <Route path="/author-quiz" component={AuthorQuiz} />
             <Route path="/product" component={Product}  />
             <Route path="/contact" component={Contact} />
+            <Route path="/blog" component={Blog} />
             <FooterContainer />
           </div>
         </Router>
