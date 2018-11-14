@@ -1,0 +1,24 @@
+.about {
+  &__wrap {
+    padding: 20px;
+    background-color: #fff;
+  }
+  &__title {
+    font-size: 28px;
+  }
+  &__image {
+    overflow: hidden;
+  }
+  &__content {
+    max-width: 680px;
+    margin: 20px auto 0;
+    text-align: justify;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+    strong {
+      font-size: 20px;
+      margin-bottom: 10px;
+      display: block;
+    }
+  }
+}

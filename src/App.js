@@ -5,7 +5,9 @@ import './assets/scss/main.scss';
 class App extends Component {
   render() {
     return (
-     <PageBase />
+      <div className="app">
+        <PageBase />
+      </div>
     );
   }
 }

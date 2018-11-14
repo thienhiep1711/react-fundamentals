@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AuthorQuizContainer from '../components/AuthorQuiz/AuthorQuizContainer';
+import PageTitle from '../components/Layout/PageTitle';
 import {shuffle, sample} from 'underscore';
 
 const authors = [
@@ -86,11 +87,7 @@ class AuthorQuiz extends Component {
     return (
       <div className="container-fluid">
          <div className="mainWrap">
-            <div className="mainWrap__title">
-                <div className="container">
-                  <h1>Authour Quizz</h1>
-                </div>
-            </div>
+            <PageTitle titlePage="AuthorQuiz Page"/>
             <div className="mainWrap__content">
                 <div className="container">
                   <AuthorQuizContainer {...this.state} selected={this.onAnswerSelected} highlight={this.highlightToBgColor(this.state.highlight)}  />

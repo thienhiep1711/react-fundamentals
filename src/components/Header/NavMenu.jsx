@@ -6,13 +6,19 @@ class NavMenu extends Component {
     return (
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-          <NavLink  to="/" className="nav-link">Home</NavLink>
+          <NavLink  to="/home" className="nav-link" >Home</NavLink>
         </li>
         <li className="nav-item">
-          <NavLink  to="/about" className="nav-link">About</NavLink>
+          <NavLink  to="/about" className="nav-link" >About</NavLink>
         </li>
          <li className="nav-item">
-          <NavLink  to="/author-quiz" className="nav-link">AuthorQuiz</NavLink>
+          <NavLink  to="/author-quiz" className="nav-link"  >AuthorQuiz</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink  to="/product" className="nav-link"  >Product</NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink  to="/contact" className="nav-link"  >Contact</NavLink>
         </li>
       </ul>
     );
