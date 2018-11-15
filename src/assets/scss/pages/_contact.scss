@@ -1,0 +1,28 @@
+.contact {
+  &__wrap {
+    padding: 20px;
+    background-color: #fff;
+  }
+  &__info {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .position {
+      font-style: italic;
+      font-size: 20px;
+      position: relative;
+      top: -10px;
+    }
+    ul {
+      li {
+        padding: 3px 0;
+        display: block;
+        strong {
+          display: inline-block;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}
