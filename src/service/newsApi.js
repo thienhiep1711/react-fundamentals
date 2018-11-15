@@ -1,42 +1,59 @@
 const news = [
   {
-    name: 'Mark Twain',
-    imageUrl: 'https://2.pik.vn/201857ee2267-bb3a-4b48-af03-5d5cb87e7aa0.jpg',
-    imageSource: 'Wikimedia Commons',
-    books: ['The Adventures of Huckleberry Finn']
+    id: 'nid001',
+    name: 'Building Applications with React and Flux',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/react-flux-building-applications-v2.png',
+    imageSource: 'Get started with React, React Router, and Flux by building a real-world style date-driven application that manages Pluralsight author date. This course uses a modern client-side development stack including Node, Browserify, Gulp, and Bootstrap.',
+    author:'Cory House',
+    date: 'Aug 12, 2015',
+    lengthTime: '5h 8m',
   },
   {
-    name: 'Joseph Conrad',
-    imageUrl: 'https://2.pik.vn/20181579a2aa-2cb4-44e0-bd95-bc7444efa5b6.jpg',
-    imageSource: 'Wikimedia Commons',
-    books: ['Heart of Darkness']
+    id: 'nid002',
+    name: 'Building Applications with React and Redux in ES6',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/react-boilerplate-building-scalable-apps-v1.jpg',
+    imageSource: 'Learn how to use Redux, React Router, and ES6 to build a real world app with React. Use Webpack, Babel, ESLint, npm scripts, Mocha, Enzyme, and more to build a rich, one step, custom React development environment and build process from the ground up.5',
+    author: 'Cory House',
+    date: 'Aug 12, 2015',
+    lengthTime: '5h 8m',
   },
   {
-    name: 'J.K. Rowling',
-    imageUrl: 'https://2.pik.vn/20185b7a6ba6-ea6e-45d7-b1ca-55d2ca4e6d33.jpg',
-    imageSource: 'Wikimedia Commons',
-    imageAttribution: 'Daniel Ogren',
-    books: ['Harry Potter and the Sorcerers Stone']
+    id: 'nid003',
+    name: ' Building Scalable React Apps',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/react-redux-react-router-es6-v1.jpg',
+    imageSource: 'In this course, Building Scalable React Apps, you will remove the guesswork with the React-Boilerplate stack so that you can keep on delivering features, without needing to evolve your stack with every new addition.',
+    author: 'Hendrik Swanepoel',
+    date: 'Oct 27, 2016',
+    lengthTime: '3h 48m',
   },
   {
-    name: 'Stephen King',
-    imageUrl: 'https://2.pik.vn/2018960ce46e-93ab-4a46-b093-c22ca1db7eb8.jpg',
-    imageSource: 'Wikimedia Commons',
-    imageAttribution: 'Pinguino',
-    books: ['The Shining', 'IT']
+    id: 'nid004',
+    name: 'Styling React Components',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/react-styling-components-v1.jpg',
+    imageSource: 'React has changed the way that people think about writing UIs. It has encouraged a community where ideas about how to style UIs have changed as well. There are now several compelling options for how to style your React components. Some are more traditional, some are more progressive.',
+    author: 'Jake Trent',
+    date: 'Jan 5, 2016',
+    lengthTime: '1h 29m',
   },
   {
-    name: 'Charles Dickens',
-    imageUrl: 'https://2.pik.vn/20180d9d7f1c-de59-4500-95ba-0e3a1b687610.jpg',
-    imageSource: 'Wikimedia Commons',
-    books: ['David Copperfield', 'A Tale of Two Cities']
+    id: 'nid005',
+    name: 'Testing React Applications with Jest',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/testing-react-applications-jest-v2.png',
+    imageSource: 'At the heart of building durable and reliable React applications is a solid understanding of testing, starting with Jest. In this course, Testing React Applications with Jest, you will learn everything you need to do to create solid tests for your React components and applications. First, you’ll learn how to install Jest on any machine',
+    author: 'Daniel Stern',
+    date: 'May 11, 2018',
+    lengthTime: '3h 36m',
   },
   {
-    name: 'William Shakespeare',
-    imageUrl: 'https://2.pik.vn/20187e40f5fc-bf85-4927-99a8-ae2f64adbbcd.png',
-    imageSource: 'Wikimedia Commons',
-    books: ['Hamlet', 'Macbeth', 'Romeo and Juliet']
-  }
+    id: 'nid006',
+    name: 'Building a Full-Stack App with React and Express',
+    imageUrl: 'https://pluralsight.imgix.net/course-images/react-express-full-stack-app-build-v1.jpg',
+    imageSource: 'In this course, well build a full-featured web application which emphasizes lighting-fast load times and live updates. Well learn how to use React.js to build a front-end web application, and use Browserify and Gulp to load the app isomorphically in Node.js',
+    author: 'Daniel Stern',
+    date: 'Aug 17, 2015',
+    lengthTime: '3h 24m',
+  },
 ];
+
 
 export default news;

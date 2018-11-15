@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import image from '../../assets/images/img-blog.jpg';
+import React from 'react';
 
-class BlogItem extends Component {
-  render() {
+const BlogItem = ({item}) => {
     return (
       <div className="blog__item">
-        <div className="blog__item__img">
-          <img src={image} alt="" className="img-responsive"/>
+        <div className="blog__item__img" style={{backgroundImage: `url(${item.imageUrl})`}}>
         </div>
         <div className="blog__item__detail">
-            <h2 className="blog__item__title">Thế nào là một Callback Function trong JavaScript</h2>
+            <h2 className="blog__item__title">{item.name} - <i>{item.author}</i></h2>
+            <div className="blog__item__time">
+              {item.date} - {item.lengthTime}
+            </div>
             <div className="blog__item__description">
-            <p>Đến với thế giới JavaScript, ta sẽ bắt gặp đủ loại function. Chắc hẳn bạn đã nghe tới Arrow Function, còn nếu chưa biết tới thì bạn có thể tham khao theo đường link này. Bên cạnh Arrow Function, JavaScript còn một loại function mà ta thường hay gặp, đó là Callback Function.</p>
+            <p>{item.imageSource}</p>
             </div>
             <div className="blog__item__read">
               <a href="#">Read more</a>
@@ -19,7 +19,6 @@ class BlogItem extends Component {
         </div>
       </div>
     );
-  }
 }
 
 export default BlogItem;

@@ -1,14 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import BlogList from './BlogList';
 
-class BlogContainer extends Component {
-  render() {
+const BlogContainer = ({news}) => {
     return (
       <div className="blog__wrap">
-        <BlogList />
+        <BlogList news={news} />
       </div>
     );
-  }
 }
 
 export default BlogContainer;

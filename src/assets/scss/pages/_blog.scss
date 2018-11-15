@@ -5,6 +5,12 @@
     display: flex;
     &__img {
       flex-basis: 320px;
+      text-align: center;
+      background-size: cover;
+      img {
+        max-width: 100%;
+
+      }
     }
     &__detail {
       flex: 1;
@@ -13,6 +19,15 @@
     &__title {
       font-size: 22px;
       margin-bottom: 10px;
+      i {
+        color: #777;
+        font-weight: normal;
+        font-size: 18px;
+      }
+    }
+    &__time {
+      margin-bottom: 10px;
+      font-size: 14px;
     }
     &__description {
       color: #777;
