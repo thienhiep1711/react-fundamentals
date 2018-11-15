@@ -13,6 +13,7 @@ class NavBar extends Component {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <NavMenu />
           <NavSearch />
+          <button className="btn btn-primary" style={{marginLeft: '10px'}}>Giỏ Hàng <b>1</b></button>
         </div>
       </nav>
     );

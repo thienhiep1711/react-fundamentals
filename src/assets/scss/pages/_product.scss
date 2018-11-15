@@ -50,6 +50,11 @@
     position: relative;
     &__img {
       padding: 15px;
+      text-align: center;
+      line-height: 225px;
+      img {
+        max-height: 225px;
+      }
     }
     &__detail {
       width: 100%;

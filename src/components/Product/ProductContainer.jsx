@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProductList from './ProductList';
 
-class ProductContainer extends Component {
-  render() {
+const ProductContainer = ({products}) => {
     return (
       <div className="product__wrap">
-        <ProductList />
+        <ProductList products={products} />
         <div className="blog__option">
               <a href="#" className="btn btn-lg btn-primary">Load more...</a>
           </div>
     </div>
     );
-  }
 }
 
 export default ProductContainer;

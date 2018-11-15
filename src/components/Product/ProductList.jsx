@@ -1,21 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ProductItem from './ProductItem';
 
-class ProductList extends Component {
-  render() {
+const ProductList = ({products}) => {
     return (
       <div className="product__list">
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
-          <ProductItem />
+        {
+          products.length > 0 && products.map((product) => (
+            <ProductItem item={product} key={product.id} />
+          ))
+        }
       </div>
     );
-  }
 }
 
 export default ProductList;

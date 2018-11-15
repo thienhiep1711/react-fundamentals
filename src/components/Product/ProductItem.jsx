@@ -1,30 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 import img from '../../assets/images/product/react.png';
 
-class ProductItem extends Component {
-  render() {
+const ProductItem = ({item}) => {
     return (
       <div className="product__item">
           <div className="product__preview">
               <div className="product__preview__img">
-                <img src={img} alt="" className="img-responsive"/>
+                <img src={item.imageUrl} alt={item.imageSource} className="img-responsive"/>
               </div>
               <div className="product__preview__detail">
-                  <a className="product__preview__button" href="#">View</a>
-                  <a className="product__preview__button" href="#">Add Cart</a>
+                  <span className="product__preview__button">View</span>
+                  <span className="product__preview__button">Add Cart</span>
               </div>
           </div>
           <div className="product__item__detail">
             <h2 className="product__item__title">
-                VueJS Framework
+                {item.name}
             </h2>
             <div className="product__item__description">
-                VueJS Framework 5 Years
+                {`Experience ${item.exp} years`}
             </div>
           </div>
       </div>
     );
-  }
 }
 
 export default ProductItem;
