@@ -1,7 +1,7 @@
 import React from 'react';
 import img from '../../assets/images/product/react.png';
 
-const ProductItem = ({item}) => {
+const ProductItem = ({item, showDetail, addToCard}) => {
     return (
       <div className="product__item">
           <div className="product__preview">
@@ -9,8 +9,8 @@ const ProductItem = ({item}) => {
                 <img src={item.imageUrl} alt={item.imageSource} className="img-responsive"/>
               </div>
               <div className="product__preview__detail">
-                  <span className="product__preview__button">View</span>
-                  <span className="product__preview__button">Add Cart</span>
+                  <span className="product__preview__button" onClick={() => showDetail(item.id)}>View</span>
+                  {/* <span className="product__preview__button" onClick={() => addToCard(item.id)}>Add Cart</span> */}
               </div>
           </div>
           <div className="product__item__detail">
