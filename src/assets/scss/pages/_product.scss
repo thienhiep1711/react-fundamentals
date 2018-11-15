@@ -72,11 +72,19 @@
     }
     &__button {
       display: inline-block;
-      padding: 6px 15px;
+      padding: 6px 25px;
       margin: 0 7px;
       border: 1px solid #fff;
+      font-size: 18px;
       color: #333;
       background-color: rgba(255,255,255, 0.9);
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: #20497f;
+        color: #fff;
+        cursor: pointer;
+        border-color: #20497f;
+      }
     }
   }
 
