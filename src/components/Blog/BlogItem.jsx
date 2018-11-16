@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router,Route, Link, Redirect  }  from 'react-router-dom';
 
 const BlogItem = ({item}) => {
     return (
@@ -6,7 +7,7 @@ const BlogItem = ({item}) => {
         <div className="blog__item__img" style={{backgroundImage: `url(${item.imageUrl})`}}>
         </div>
         <div className="blog__item__detail">
-            <h2 className="blog__item__title">{item.name} - <i>{item.author}</i></h2>
+            <Link to={`/blog/${item.id}`} className="blog__item__title">{item.name} - <i>{item.author}</i></Link>
             <div className="blog__item__time">
               {item.date} - {item.lengthTime}
             </div>
