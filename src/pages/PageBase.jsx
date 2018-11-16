@@ -18,7 +18,8 @@ class PageBase extends Component {
           <div>
             <NavBar />
             <Switch>
-              <Route exact path="/home" component={Home} />
+              <Route exact path="/" component={Home} />
+              <Route path="/home" component={Home} />
               <Route path="/about" component={About}  />
               <Route path="/author-quiz" component={AuthorQuiz} />
               <Route path="/product" component={Product}  />

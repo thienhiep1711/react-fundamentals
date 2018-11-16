@@ -18,7 +18,7 @@ const news = [
     lengthTime: '5h 8m',
   },
   {
-    id: '002',
+    id: '3',
     name: ' Building Scalable React Apps',
     image: 'https://pluralsight.imgix.net/course-images/react-redux-react-router-es6-v1.jpg',
     description: 'In this course, Building Scalable React Apps, you will remove the guesswork with the React-Boilerplate stack so that you can keep on delivering features, without needing to evolve your stack with every new addition.',
@@ -27,7 +27,7 @@ const news = [
     lengthTime: '3h 48m',
   },
   {
-    id: '3',
+    id: '4',
     name: 'Styling React Components',
     image: 'https://pluralsight.imgix.net/course-images/react-styling-components-v1.jpg',
     description: 'React has changed the way that people think about writing UIs. It has encouraged a community where ideas about how to style UIs have changed as well. There are now several compelling options for how to style your React components. Some are more traditional, some are more progressive.',
@@ -36,7 +36,7 @@ const news = [
     lengthTime: '1h 29m',
   },
   {
-    id: '4',
+    id: '5',
     name: 'Testing React Applications with Jest',
     image: 'https://pluralsight.imgix.net/course-images/testing-react-applications-jest-v2.png',
     description: 'At the heart of building durable and reliable React applications is a solid understanding of testing, starting with Jest. In this course, Testing React Applications with Jest, you will learn everything you need to do to create solid tests for your React components and applications. First, you’ll learn how to install Jest on any machine',
@@ -45,7 +45,7 @@ const news = [
     lengthTime: '3h 36m',
   },
   {
-    id: '5',
+    id: '6',
     name: 'Building a Full-Stack App with React and Express',
     image: 'https://pluralsight.imgix.net/course-images/react-express-full-stack-app-build-v1.jpg',
     description: 'In this course, well build a full-featured web application which emphasizes lighting-fast load times and live updates. Well learn how to use React.js to build a front-end web application, and use Browserify and Gulp to load the app isomorphically in Node.js',

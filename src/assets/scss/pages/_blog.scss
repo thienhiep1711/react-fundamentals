@@ -37,4 +37,37 @@
   &__option {
     text-align: center;
   }
+  &__detail {
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      color: #777;
+    }
+    &__author {
+      font-weight: bold;
+      font-style: italic;
+    }
+    &__description {
+      margin: 15px 0;
+    }
+  }
+}
+
+.gallery {
+  &__list {
+    display: flex;
+    width: calc(100% + 15px);
+    flex-wrap: wrap;
+    margin: 20px 0 20px;
+  }
+  &__item {
+    width: calc(100%/4 - 15px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    img {
+      max-width: 100%;
+
+    }
+  }
 }

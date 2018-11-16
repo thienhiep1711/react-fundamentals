@@ -11,11 +11,11 @@ class HomeContainer extends Component {
             <img src={banner} alt="" className="img-responsive"/>
           </div>
           <div className="about__wrap">
-      <div className="about__content">
-        <ContentTitle contentTitle="Xin tự giới thiệu về tôi..."/>
-        <HomeContent />
-        </div>
-    </div>
+            <div className="about__content">
+              <ContentTitle contentTitle="Xin tự giới thiệu về tôi..."/>
+              <HomeContent />
+              </div>
+          </div>
       </div>
     
     );

@@ -1,23 +1,24 @@
 import React from 'react';
+import HtmlRaw from '../Common/HtmlRaw';
 
 const ProductPopupView = ({popupData}) => {
+    const data = popupData[0];
     return (
       <div className="popup__wrap__content">
           <div className="popup__title">
                 <div className="popup__title__content">
-                  {popupData[0].name}
+                  {data.name}
                 </div>
             </div>
             <div className="popup__content">
                 <div className="product__popup">
                     <div className="product__popup__gallery">
-                      <img src={popupData[0].image} alt=""/>
+                      <img src={data.image} alt=""/>
                     </div>
                     <div className="product__popup__detail">
-                        <h3>{popupData[0].name}</h3>
-                        <p className="description">{popupData[0].description}</p>
-                        <div className="text " dangerouslySetInnerHTML={{__html: popupData[0].content}}>
-                        </div>
+                        <h3>{data.name}</h3>
+                        <p className="description">{data.description}</p>
+                        <HtmlRaw htmlRaw={data.content} />
                     </div>
                 </div>
 
