@@ -8,7 +8,7 @@ const BlogList = ({news, selected}) => {
         news.length > 0 && news.map((item) => <BlogItem item={item} key={item.id} selected={selected}/>)
       }
       <div className="blog__option">
-          <a href="#" className="btn btn-lg btn-primary">Load more...</a>
+          <a href="/" className="btn btn-lg btn-primary">Load more...</a>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const ProductContainer = ({products, showDetail, addToCard}) => {
       <div className="product__wrap">
         <ProductList products={products} showDetail={showDetail} addToCard={addToCard} />
         <div className="blog__option">
-              <a href="#" className="btn btn-lg btn-primary">Load more...</a>
+              <a href="/" className="btn btn-lg btn-primary">Load more...</a>
           </div>
     </div>
     );

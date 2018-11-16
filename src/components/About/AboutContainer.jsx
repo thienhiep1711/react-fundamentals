@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import ContentTitle from '../Common/ContentTitle';
 import AboutContent from './AboutContent';
-import banner from '../../assets/images/front-end-banner.jpg';
 
 class AboutContainer extends Component {
   render() {

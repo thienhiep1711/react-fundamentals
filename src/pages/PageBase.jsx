@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { BrowserRouter as Router,Route, Link, Switch  } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Switch  } from 'react-router-dom';
 
 import NavBar from '../components/Header/NavBar';
 import FooterContainer from '../components/Footer/FooterContainer';
@@ -21,7 +21,7 @@ class PageBase extends Component {
               <Route exact path="/" component={Home} />
               <Route path="/home" component={Home} />
               <Route path="/about" component={About}  />
-              <Route path="/author-quiz" component={AuthorQuiz} />
+              <Route path="/game" component={AuthorQuiz} />
               <Route path="/product" component={Product}  />
               <Route path="/contact" component={Contact} />
               <Route path="/blog" component={Blog} />

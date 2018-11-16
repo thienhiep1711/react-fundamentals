@@ -6,7 +6,7 @@ const Gallery = ({gallery}) => {
           {
             gallery && gallery.map((item, index) => (
               <div className="gallery__item" key={`item__${index}`}>
-                  <img src={item}/>
+                  <img src={item} alt=""/>
               </div>
             ))
           }

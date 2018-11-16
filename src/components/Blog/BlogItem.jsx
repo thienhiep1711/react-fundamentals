@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,Route, Link, Redirect  }  from 'react-router-dom';
+import { Router,Route, Link  }  from 'react-router-dom';
 
 const BlogItem = ({item, selected}) => {
     return (
@@ -15,7 +15,7 @@ const BlogItem = ({item, selected}) => {
             <p>{item.description}</p>
             </div>
             <div className="blog__item__read">
-              <a href="#">Read more</a>
+              <Link to={`/blog/${item.id}`}  onClick={() => selected(item.id)}>Read more</Link>
             </div>
         </div>
       </div>

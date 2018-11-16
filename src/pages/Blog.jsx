@@ -26,6 +26,7 @@ class Blog extends Component {
 
   render() {
     const selected = this.state.selected;
+
     return (
       <div className="container-fluid">
         <div className="mainWrap">
@@ -43,10 +44,6 @@ class Blog extends Component {
                       {
                         selected.length > 0 ? ( <BlogDetail details={this.state.selected} />) : ( <Route render={() => <Redirect to="/blog" />} />)
                       }
-                     
-                  </Route>
-                  <Route path="/blog/:id">
-                      <BlogDetail details={this.state.selected} />
                   </Route>
                 </Switch>
               </div>
