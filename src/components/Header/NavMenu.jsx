@@ -21,6 +21,9 @@ class NavMenu extends Component {
           <NavLink  to="/product" className="nav-link">Product</NavLink>
         </li>
         <li className="nav-item">
+          <NavLink  to="/table" className="nav-link">Table</NavLink>
+        </li>
+        <li className="nav-item">
           <NavLink  to="/contact" className="nav-link">Contact</NavLink>
         </li>
       </ul>

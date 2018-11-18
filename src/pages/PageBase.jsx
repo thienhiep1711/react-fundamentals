@@ -10,6 +10,7 @@ import About from './About';
 import Product from './Product';
 import Contact from './Contact';
 import Blog from './Blog';
+import Table from './Table';
 import NotFound from '../components/NotFound/NotFound';
 class PageBase extends Component {
   render() {
@@ -25,6 +26,7 @@ class PageBase extends Component {
               <Route path="/product" component={Product}  />
               <Route path="/contact" component={Contact} />
               <Route path="/blog" component={Blog} />
+              <Route path="/table" component={Table} />
               <Route component={NotFound} />
             </Switch>
             <FooterContainer />

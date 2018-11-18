@@ -39,7 +39,7 @@ class Product extends Component {
           <PageTitle titlePage="Product Page"/>
           <div className="mainWrap__content">
               <div className="container">
-                  <ProductContainer 
+                  <ProductContainer
                   {...this.state}
                   showDetail={this.showDetailProduct}
                   addToCard={this.addToCard}

@@ -1,0 +1,16 @@
+.datatable {
+    &__control {
+        margin-bottom: 15px;
+        text-align: right;
+    }
+    &__content {
+        .table {
+            .text-right {
+                .btn {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+}
