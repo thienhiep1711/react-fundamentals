@@ -19,7 +19,12 @@ class Table extends Component {
         this.addUser = this.addUser.bind(this);
         this.editUser = this.editUser.bind(this);
         this.deleteUser = this.deleteUser.bind(this);
+        this.handleChange = this.handleChange.bind(this);
+        this.phoneNumber = React.createRef();
+        this.address = React.createRef();
     }
+
+
 
     addUser() {
         console.log(`Add`);
@@ -45,6 +50,11 @@ class Table extends Component {
         toast.error(`Deleted: ${name}`);
     }
 
+    handleChange(propertyName, event) {
+    }
+
+    handleSubmit(event, propertyName) {
+    }
     render() {
         return (
             <div className="container-fluid">
@@ -61,7 +71,7 @@ class Table extends Component {
                     </div>
                 </div>
                 <ToastContainer />
-                <PopupContainer showPopup={this.state.isOpenPopup} content={ <DatatableView popupData={this.state.selected} />} />
+                <PopupContainer showPopup={this.state.isOpenPopup} content={ <DatatableView popupData={this.state.selected} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />} />
                 </div>
             </div>
         );
