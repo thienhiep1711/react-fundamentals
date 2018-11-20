@@ -10,17 +10,19 @@ $base-font:$font-roboto;
 $base-font-size: 15px;
 $base-background: #efefef;
 $base-text-color: #333333;
-$base-border-color: #00aaac;
-$base-color-primary:#007ebb;
-$base-color-hover:#007ebb;
+$base-border-color: #e5e5e5;
 
-$color-blue:007ebb;
+
+$color-primary:#007ebb;
+$color-secondary:#00aaac;
+$color-white: #ffffff;
+$color-blue:#007ebb;
 $color-red:red;
 
 /* --- mmenu --- */
 $mm-menu-background:#007ebb;
 $mm-menu-fontSize:15px;
-$mm-menu-textColor:#fff;
+$mm-menu-textColor:$color-white;
 $mm-menu-borderColor:rgba(255,255,255,0.5);
 
 

@@ -43,7 +43,7 @@
 
             &:hover a, &:focus a, &.current a {
                 background: $pagination-hover;
-                color: #fff;
+                color: $color-white;
             }
 
             span i {

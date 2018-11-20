@@ -39,7 +39,7 @@
         line-height: 48px;
         text-align: center;
         font-size: 38px;
-        color: #fff;
+        color: $color-white;
         transition: all .5s ease;
         opacity: 0;
 
@@ -74,7 +74,7 @@
 
             span {
                 margin: 0 8px 0 0;
-                background: #fff;
+                background: $color-white;
                 opacity: 1;
                 width: 14px;
                 height: 14px;
@@ -99,7 +99,7 @@
         width: 100%;
         left: 0;
         background: rgba(0, 0, 0, 0.6);
-        color: #fff;
+        color: $color-white;
     }
 
     .callFullScreen {
@@ -183,7 +183,7 @@
 
         &:hover {
             background-color:#222;
-            color:#fff;
+            color:$color-white;
         }
     }
 

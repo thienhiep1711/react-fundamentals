@@ -22,7 +22,7 @@
             font: normal normal normal 14px/1 FontAwesome;
 
             &:before {
-                color: #fff;
+                color: $color-white;
                 width: 40px;
                 height: 40px;
                 border: 1px solid #ed161d;
@@ -98,10 +98,10 @@
             font: normal normal normal 14px/1 FontAwesome;
 
             &:before {
-                color: #fff;
+                color: $color-white;
                 width: 40px;
                 height: 40px;
-                border: 3px solid #fff;
+                border: 3px solid $color-white;
                 border-radius: 100%;
                 top: 50%;
                 left: 50%;
@@ -167,10 +167,10 @@
             font: normal normal normal 14px/1 FontAwesome;
 
             &:before {
-                color: #fff;
+                color: $color-white;
                 width: 46px;
                 height: 46px;
-                border: 3px solid #fff;
+                border: 3px solid $color-white;
                 border-radius: 100%;
                 top: 50%;
                 left: 50%;

@@ -1,3 +1,5 @@
+@import "../../assets/scss/helpers/_variables_collective";
+
 .popup {
   &__container {
     position: fixed;
@@ -12,7 +14,7 @@
   &__wrap {
     min-width: 300px;
     max-width: 1000px;
-    background-color: #fff;
+    background-color: $color-white;
     z-index: 99;
     position: relative;
     max-height: calc(100vh - 60px);

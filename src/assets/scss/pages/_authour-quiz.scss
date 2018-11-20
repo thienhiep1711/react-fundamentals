@@ -1,6 +1,8 @@
+@import "../helpers/_variables_collective";
+
 .author {
   &__wrap {
-    background-color: #fff;
+    background-color: $color-white;
   }
   &__main {
     padding: 20px;

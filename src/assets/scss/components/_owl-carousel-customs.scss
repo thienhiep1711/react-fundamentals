@@ -1,7 +1,7 @@
 ﻿
 
 $color-base: rgba(0,0,0,0.8) !default;
-$color-white: #FFF !default;
+$color-white: $color-white !default;
 $color-gray: rgba(0,0,0,0.5) !default;
 
 //nav
@@ -39,7 +39,7 @@ $dot-background-active: $color-base !default;
         bottom: 0;
         left: 0;
         line-height: 1.4em;
-        color: #fff;
+        color: $color-white;
         background-color: rgba(0,0,0,0.7);
     }
 
