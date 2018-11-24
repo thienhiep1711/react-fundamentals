@@ -12,6 +12,7 @@ import Contact from './Contact';
 import Blog from './Blog';
 import Table from './Table';
 import NotFound from '../components/NotFound/NotFound';
+import TodoApp from '../pages/TodoApp/TodoApp';
 class PageBase extends Component {
   render() {
     return (
@@ -27,6 +28,7 @@ class PageBase extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/blog" component={Blog} />
               <Route path="/table" component={Table} />
+              <Route path="/todoapp" component={TodoApp} />
               <Route component={NotFound} />
             </Switch>
             <FooterContainer />
