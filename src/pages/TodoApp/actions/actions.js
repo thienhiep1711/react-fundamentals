@@ -1,22 +1,56 @@
+import service from '../../../service/index';
+import actionTypes from './action-types';
+
+
 let nextTodoId = 0
 export const addTodo = text => ({
-  type: 'ADD_TODO',
+  type: actionTypes.ADD_TODO,
   id: nextTodoId++,
   text
 })
 
 export const setVisibilityFilter = filter => ({
-  type: 'SET_VISIBILITY_FILTER',
+  type: actionTypes.SET_VISIBILITY_FILTER,
   filter
 })
 
 export const toggleTodo = id => ({
-  type: 'TOGGLE_TODO',
+  type: actionTypes.TOOGLE_TODO,
   id
 })
 
-export const VisibilityFilters = {
-  SHOW_ALL: 'SHOW_ALL',
-  SHOW_COMPLETED: 'SHOW_COMPLETED',
-  SHOW_ACTIVE: 'SHOW_ACTIVE'
+export const fetchTodosBegin = () => ({
+  type: actionTypes.FETCH_TODOS_BEGIN
+});
+
+export const fetchTodosSuccess = todos => ({
+  type: actionTypes.FETCH_TODOS_SUCCESS,
+  payload: {todos}
+})
+
+export const fecthTodosFailure = error => ({
+  type: actionTypes.FETCH_TODOS_FAILURE,
+  payload: {error}
+})
+
+export function fetchTodos() {
+  return dispatch => {
+    dispatch(fetchTodosBegin());
+    return fetch(service.getTodos)
+      .then(handleErrors)
+      .then(res => res.json())
+      .then(json => {
+        dispatch(fetchTodosSuccess(json));
+        return(error => dispatch(fecthTodosFailure(error)));
+        
+      })
+  }
+}
+
+
+function handleErrors(response) {
+  if (!response.ok) {
+    throw Error(response.statusText);
+  }
+  return response;
 }
